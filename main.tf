@@ -47,7 +47,7 @@ resource "aws_security_group" "allow_all" {
     prefix_list_ids = ["pl-12c4e678"]
   } 
 }
-
+t
 resource "aws_instance" "web" {
   ami                    = "${data.aws_ami.ubuntu.id}"
   instance_type          = "${var.instance_type}"
@@ -56,7 +56,7 @@ resource "aws_instance" "web" {
   
 }
 resource "aws_s3_bucket" "b" {
-  bucket = "my-test-bucketmanan02"
+  bucket = "my-test-bucketmanan0603"
   
 
   tags = {
