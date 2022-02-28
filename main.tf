@@ -55,12 +55,4 @@ resource "aws_instance" "web" {
 
   
 }
-resource "aws_s3_bucket" "b" {
-  bucket = "my-test-bucketmanan0603"
-  
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
